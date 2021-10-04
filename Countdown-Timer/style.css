@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 5px;
+  position: relative;
+}
+
+.display-box {
+  height: 100%;
+
+  display: flex;
+  flex: column no-wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.output {
+  display: flex;
+  flex: row no-wrap;
+  justify-content: center;
+  align-items: center;
+}
