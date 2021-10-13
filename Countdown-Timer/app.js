@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
-console.log(path.join(__dirname, 'public'));
-app.listen(3000, () => {
-  console.log('Listening on port 3000!');
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Listening on port ${port}!`);
 });
