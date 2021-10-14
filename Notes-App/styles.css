@@ -28,6 +28,21 @@ body {
   border-radius: 5px;
   flex-basis: 75%;
   overflow: scroll;
+  padding: 10px;
+}
+
+.note {
+  width: 100%;
+  height: 75px;
+  border-style: dashed;
+  border-color: brown;
+  border-radius: 3px;
+  border-width: 2px;
+  margin: 10px 0px;
+}
+
+.note p {
+  margin: 0;
 }
 
 .notes-input-container {
