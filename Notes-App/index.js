@@ -14,12 +14,19 @@ addButton.click(() => {
     notes.prepend(makeNote(inputContent.val()));
   }
 
-  // inputContent.val('');
+  inputContent.val('');
 });
 
 function makeNote(text) {
+  let date = new Date();
+  date =
+    String(date.getDay()).padStart(2, '0') +
+    '.' +
+    String(date.getMonth()).padStart(2, '0');
+  console.log(date);
   let note = `<div class="note">
-  <p>${text}</p>
+  <p class = "note-text">${text}</p>
+  <span class = "note-date">${date}</span>
   </div>`;
   return note;
 }
